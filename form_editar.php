@@ -4,7 +4,7 @@
     $dados = file_get_contents('bd.json');   /// ler o arquivo json
     $dados = json_decode($dados); 
     
-    $row = $dados[$id];
+    $row = $dados->$id;
 ?>
 
 <!doctype html>
