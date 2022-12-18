@@ -14,7 +14,7 @@ if(isset($_POST['salvar'])){
     );
 
     $dados = file_get_contents('bd.json');
-    $dados_array = json_decode($dados);
+    $dados_array = json_decode($dados,true);
 
     $dados_array[ $_POST['id'] ] = $input; /// pega os valores que foi retornado do json que esta
                                          ///  armazenado na operação: $data_array = json_decode($data) e acessa 
